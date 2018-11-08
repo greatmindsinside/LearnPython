@@ -59,6 +59,29 @@ def count_substring(string, sub_string):
 def stringvalid(s):
     print(str(s).isalpha())
     print(str(s).isalnum())
+    
+if __name__ == '__main__':
+    #N = number of commands
+    TheList = []
+    N = int(input())
+    for n in range(N):
+        x = input().split()
+        command = x[0]
+        if command == "append":
+            TheList.append(int(x[1]))
+        if command ==  "print":
+            print(TheList)
+        if command == "insert":
+            TheList.insert(int(x[1]), int(x[2]))
+        if command == "reverse":
+            TheList.reverse()
+        if command == "sort":
+            TheList = sorted(TheList)
+        if command == "pop":
+            TheList.pop()
+        if command == "remove":
+            TheList.remove(int(x[1]))
+    
 
 
 
