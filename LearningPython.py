@@ -1,5 +1,5 @@
 
-thestring = 'HackerRank.com presents "Pythonist 2".'
+
 
 def swap_case(s):
     thestring = ""
